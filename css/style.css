@@ -1,0 +1,147 @@
+.tetris-nav-logo-position {
+    top: -180px;
+    left: -200px;
+    height: auto;
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-home {
+    top: 96px;
+    left: 550px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 38px;
+    align-self: auto;
+    font-style: Light;
+    text-align: left;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+.nav-score {
+    top: 96px;
+    left: 850px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 38px;
+    align-self: auto;
+    font-style: Light;
+    text-align: left;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+.nav-about {
+    top: 96px;
+    left: 1250px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 38px;
+    align-self: auto;
+    font-style: Light;
+    text-align: left;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+.nav-login {
+    top: 96px;
+    left: 1550px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 38px;
+    align-self: auto;
+    font-style: normal;
+    text-align: left;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+.main-page-body {
+    top: 300px;
+    left: 175px;
+    max-height: fit-content;
+    max-width: fit-content;
+    position: relative;
+    background-color: black;
+}
+
+.main-page-body-tetris-logo {
+    top: 250px;
+    left: 200px;
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+
+.main-page-body-tetris-logo-position {
+    top: -500px;
+    left: -50px;
+    position: relative;
+}
+
+.main-page-body-content-01 {
+    top: -450px;
+    left: 400px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: relative;
+    font-size: 60px;
+    align-self: auto;
+    font-style: light;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+.main-page-body-content-02 {
+    top: -400px;
+    left: 1150px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: relative;
+    font-size: 60px;
+    align-self: auto;
+    font-style: light;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 600;
+}
+
+.main-page-body-content-03 {
+    top: -350px;
+    left: 1160px;
+    height: auto;
+    position: relative;
+}
+
+.main-page-play-button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 50px;
+    font-size: 50px;
+    font-style: light;
+    font-family: Lato;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.footer-button-down {
+    top: -200px;
+    left: 1700px;
+    position: relative;
+}
