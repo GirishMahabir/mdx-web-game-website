@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Google Fonts. -->
     <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
@@ -25,32 +26,38 @@
 </header>
 
 <body>
-    <div class="register-page-body-tetris">
-        <img class="register-page-body-tetris" src="../assets/tetris_logo.png" alt="tetris_logo">
+    <div class="tetris-body">
+        <img class="tetris-body" src="../assets/tetris_logo.png" alt="tetris_logo">
     </div>
     <div>
         <!-- 4 Text fields, 2 column, pill buttons -->
-        <form class="register-page-form">
+        <form class="page-form">
             <span>
-                <label class="register-form-font tab-40 " for="user_id">Username/Email</label>
-                <label class="register-form-font tab-80" for="phone_number">Phone Number</label><br>
+                <label class="form-font tab-40 " for="user_id">Username/Email</label>
+                <label class="form-font tab-80" for="phone_number">Phone Number</label><br>
                 <input class="form-input" type="text" id="user_id" name="user_id" placeholder="Username/Email">
                 <input class="form-input" type="phone_number" id="phone_number" name="phone_number"
                     placeholder="Phone Number">
             </span>
             <br> <br> <br>
             <span>
-                <label class="register-form-font tab-80" for="password">Password</label>
-                <label class="register-form-font tab-180" for="address">Address</label><br>
+                <label class="form-font tab-80" for="password">Password</label>
+                <label class="form-font tab-180" for="address">Address</label><br>
                 <input class="form-input" type="password" id="password" name="password" placeholder="Password">
                 <input class="form-input" type="text" id="address" name="address" placeholder="Address">
             </span>
             <br> <br>
             <span>
-                <button class="register-form-font register-button" type="submit" class="btn">Register</button>
+                <button class="form-font register-button" type="submit" class="btn">Register</button>
             </span>
         </form>
     </div>
 </body>
+<footer>
+    <span>
+        <a class="login-register-footer-button-down" href="google.com"><img src="../assets/down-arrow.png"
+                alt="Hide/Show footer" style="width:100px;height:100px;transform: rotate(180deg)">
+        </a>
+</footer>
 
 </html>

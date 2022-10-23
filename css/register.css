@@ -25,18 +25,18 @@ header h1 {
     background-color: aquamarine;
 }
 
-.register-page-body-tetris {
+.tetris-body {
     top: 150px;
     left: 50px;
     position: relative;
 }
 
-.register-page-form {
+.page-form {
     left: 1000px;
     position: relative;
 }
 
-.register-form-font {
+.form-font {
     font-family: Lato;
     font-size: 27px;
     font-weight: 600;
@@ -71,14 +71,18 @@ header h1 {
     margin-left: 80px;
 }
 
+.tab-130 {
+    display: inline-block;
+    margin-left: 130px;
+}
+
 .tab-180 {
     display: inline-block;
     margin-left: 180px;
 }
 
 .form-input {
-    border: ;
-    color: black;
+    color: gray;
     padding: 10px 30px;
     font-size: 20px;
     font-style: light;
@@ -89,4 +93,17 @@ header h1 {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 100px;
+}
+
+.create-account {
+    position: relative;
+    top: 70px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.login-register-footer-button-down {
+    position: relative;
+    top: 200px;
+    left: 1700px;
 }
