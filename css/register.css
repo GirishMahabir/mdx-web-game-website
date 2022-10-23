@@ -1,0 +1,92 @@
+header h1 {
+    font-family: Lato;
+    position: absolute;
+    top: 15px;
+    left: 100px;
+    font-size: 60px;
+    max-width: fit-content;
+}
+
+.menu-icon-pos {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    max-width: 70px;
+}
+
+.md-52 {
+    font-size: 52px !important;
+}
+
+.menu-icon-btn {
+    text-decoration: none;
+    color: black;
+    max-width: fit-content;
+    background-color: aquamarine;
+}
+
+.register-page-body-tetris {
+    top: 150px;
+    left: 50px;
+    position: relative;
+}
+
+.register-page-form {
+    left: 1000px;
+    position: relative;
+}
+
+.register-form-font {
+    font-family: Lato;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.register-button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    top: 20px;
+    left: 190px;
+    position: relative;
+    font-size: 30px;
+    font-style: light;
+    font-family: Lato;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.tab-40 {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.tab-80 {
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.tab-180 {
+    display: inline-block;
+    margin-left: 180px;
+}
+
+.form-input {
+    border: ;
+    color: black;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-style: light;
+    font-family: Lato;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/register.css">
+    <!-- Google Fonts. -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <!-- Google Icon Link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Tetris - Register</title>
+</head>
+
+<header>
+    <h1>REGISTER</h1>
+    <span>
+        <a class="menu-icon-btn" href="https://google.com">
+            <i class="material-icons md-52 menu-icon-pos" color="black">menu-hamburger</i>
+    </span>
+
+</header>
+
+<body>
+    <div class="register-page-body-tetris">
+        <img class="register-page-body-tetris" src="../assets/tetris_logo.png" alt="tetris_logo">
+    </div>
+    <div>
+        <!-- 4 Text fields, 2 column, pill buttons -->
+        <form class="register-page-form">
+            <span>
+                <label class="register-form-font tab-40 " for="user_id">Username/Email</label>
+                <label class="register-form-font tab-80" for="phone_number">Phone Number</label><br>
+                <input class="form-input" type="text" id="user_id" name="user_id" placeholder="Username/Email">
+                <input class="form-input" type="phone_number" id="phone_number" name="phone_number"
+                    placeholder="Phone Number">
+            </span>
+            <br> <br> <br>
+            <span>
+                <label class="register-form-font tab-80" for="password">Password</label>
+                <label class="register-form-font tab-180" for="address">Address</label><br>
+                <input class="form-input" type="password" id="password" name="password" placeholder="Password">
+                <input class="form-input" type="text" id="address" name="address" placeholder="Address">
+            </span>
+            <br> <br>
+            <span>
+                <button class="register-form-font register-button" type="submit" class="btn">Register</button>
+            </span>
+        </form>
+    </div>
+</body>
+
+</html>
