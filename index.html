@@ -15,49 +15,56 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-    <nav class="wrapper">
-        <div>
-            <span class="tetris-nav-logo-position">
+<!-- Main Page Container -->
+<body class="main_container">
+    <!-- Page Logo and Nav Bar  -->
+    <header class="header">
+        <div class="tetris-logo">
+            <div class="tetris-nav-tetris-logo-position">
                 <img src="assets/tetris_home_slow.gif" alt="tet">
-            </span>
-            <span class="nav-home">
-                <a class="nav-link" href="index.html">HOME</a>
-            </span>
-            <span class="nav-score">
-                <a class="nav-link" href="html/scoreboard.html">SCOREBOARD</a>
-            </span>
-            <span class="nav-about">
-                <a class="nav-link" href="html/about.html">ABOUT</a>
-            </span>
-            <span class="nav-login">
-                <a class="nav-link" href="html/login.html">LOGIN</a>
-            </span>
+            </div>
         </div>
-    </nav>
 
-</header>
+        <div class="nav-bar">
+            <div class="nav-home">
+                <a class="nav-link" href="index.html">HOME</a>
+            </div>
+            <div class="nav-score">
+                <a class="nav-link" href="html/scoreboard.html">SCOREBOARD</a>
+            </div>
+            <div class="nav-about">
+                <a class="nav-link" href="html/about.html">ABOUT</a>
+            </div>
+            <div class="nav-login">
+                <a class="nav-link" href="html/login.html">LOGIN</a>
+            </div>
+        </div>
+    </header>
+    <!-- Body of the page  -->
+    <div class="context-body">
+        <div class="tetris-logo">
+            <img src="assets/tetris_logo.png" alt="tetris_tetris-logo">
+        </div>
 
-<body>
-    <div>
-        <span class="main-page-body-tetris-logo-position">
-            <img class="main-page-body-tetris-logo" src="assets/tetris_logo.png" alt="tetris_logo">
-        </span>
-        <span class="main-page-body-content-01">WELCOME TO THE TETRIS</span>
-        <br>
-        <span class="main-page-body-content-02">WORLD</span>
-        <br>
-        <button class="main-page-play-button main-page-body-content-03">PLAY</button>
-        <br>
+        <div class="welcome-text">
+            <div class="main-page-body-content-01">WELCOME TO THE TETRIS</div>
+            <br>
+            <div class="main-page-body-content-02">WORLD</div>
+            <br> <br> <br>
+            <button class="main-page-play-button main-page-body-content-03" href="html/game.html">PLAY</button>
+            <br>
+        </div>
     </div>
+    <!-- Footer of the page  -->
+    <footer>
+        <div class="footer">
+            <a class="footer-button-down" href="google.com"><img src="assets/down-arrow.png" alt="Hide/Show footer"
+                    style="width:100px;height:100px;transform: rotate(180deg)">
+            </a>
+        </div>
+    </footer>
 </body>
 
-<footer>
-    <span>
-        <a class="footer-button-down" href="google.com"><img src="assets/down-arrow.png" alt="Hide/Show footer"
-                style="width:100px;height:100px;transform: rotate(180deg)">
-        </a>
-    </span>
-</footer>
+
 
 </html>

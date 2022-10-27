@@ -1,13 +1,8 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-.tetris-nav-logo-position {
-    top: -180px;
-    left: -200px;
-    height: auto;
-    position: relative;
+.tetris-nav-tetris-logo-position img {
+    width: 300px;
+    height: 10%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .nav-link {
@@ -16,13 +11,8 @@
 }
 
 .nav-home {
-    top: 96px;
-    left: 550px;
     color: rgba(0, 0, 0, 1);
-    height: auto;
-    position: absolute;
     font-size: 38px;
-    align-self: auto;
     font-style: Light;
     text-align: left;
     font-family: Lato;
@@ -30,13 +20,8 @@
 }
 
 .nav-score {
-    top: 96px;
-    left: 850px;
     color: rgba(0, 0, 0, 1);
-    height: auto;
-    position: absolute;
     font-size: 38px;
-    align-self: auto;
     font-style: Light;
     text-align: left;
     font-family: Lato;
@@ -44,13 +29,9 @@
 }
 
 .nav-about {
-    top: 96px;
-    left: 1250px;
     color: rgba(0, 0, 0, 1);
     height: auto;
-    position: absolute;
     font-size: 38px;
-    align-self: auto;
     font-style: Light;
     text-align: left;
     font-family: Lato;
@@ -58,36 +39,15 @@
 }
 
 .nav-login {
-    top: 96px;
-    left: 1550px;
     color: rgba(0, 0, 0, 1);
-    height: auto;
-    position: absolute;
     font-size: 38px;
-    align-self: auto;
     font-style: normal;
     text-align: left;
     font-family: Lato;
     font-weight: 600;
 }
 
-.main-page-body-tetris-logo {
-    top: 250px;
-    left: 200px;
-    width: 500px;
-    height: 300px;
-    position: relative;
-}
-
-.main-page-body-tetris-logo-position {
-    top: -500px;
-    left: -50px;
-    position: relative;
-}
-
 .main-page-body-content-01 {
-    top: -450px;
-    left: 400px;
     color: rgba(0, 0, 0, 1);
     height: auto;
     position: relative;
@@ -100,8 +60,6 @@
 }
 
 .main-page-body-content-02 {
-    top: -400px;
-    left: 1150px;
     color: rgba(0, 0, 0, 1);
     height: auto;
     position: relative;
@@ -111,13 +69,6 @@
     text-align: center;
     font-family: Lato;
     font-weight: 600;
-}
-
-.main-page-body-content-03 {
-    top: -350px;
-    left: 1160px;
-    height: auto;
-    position: relative;
 }
 
 .main-page-play-button {
@@ -137,7 +88,50 @@
 }
 
 .footer-button-down {
-    top: -270px;
-    left: 1700px;
-    position: relative;
+    padding-right: 10%;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.context-body {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.tetris-logo {
+    width: 20%;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
