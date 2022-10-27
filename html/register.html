@@ -16,23 +16,34 @@
 </head>
 
 <body class="main-container">
-    <header>
-        <h1>REGISTER</h1>
-        <div>
+    <!-- Page Logo and Nav Bar  -->
+    <header class="header">
+        <div class="tetris-logo">
+            <div class="tetris-nav-tetris-logo-position">
+                <img src="../assets/tetris_home_slow.gif" alt="tet">
+            </div>
+        </div>
+        <h1 class="">
+            REGISTER
+        </h1>
+
+        <div class="nav-bar-icon">
             <a class="menu-icon-btn" href="https://google.com">
-                <i class="material-icons md-52 menu-icon-pos" color="black">menu-hamburger</i>
+                <i class="material-icons" color="black">menu-hamburger</i>
             </a>
         </div>
 
     </header>
+    <!-- Body of the page  -->
+    <div class="context-body">
 
-    <body>
-        <div class="tetris-body">
-            <img class="tetris-body" src="../assets/tetris_logo.png" alt="tetris_logo">
+        <div class="tetris-logo-main">
+            <img src="../assets/tetris_logo.png" alt="tetris_tetris-logo">
         </div>
-        <div>
+
+        <div class="login-form">
             <!-- 4 Text fields, 2 column, pill buttons -->
-            <form class="page-form">
+            <form>
                 <div>
                     <label class="form-font tab-40 " for="user_id">Username/Email</label>
                     <label class="form-font tab-80" for="phone_number">Phone Number</label><br>
@@ -48,19 +59,23 @@
                     <input class="form-input" type="text" id="address" name="address" placeholder="Address">
                 </div>
                 <br> <br>
-                <div>
+                <div class="register-btn">
                     <button class="form-font register-button" type="submit" class="btn">Register</button>
                 </div>
+
             </form>
         </div>
-    </body>
-    <footer>
-        <div>
-            <a class="login-register-footer-button-down" href="google.com"><img src="../assets/down-arrow.png"
-                    alt="Hide/Show footer" style="width:100px;height:100px;transform: rotate(180deg)">
-            </a>
-    </footer>
 
+
+    </div>
+    <!-- Footer of the page  -->
+    <footer>
+        <div class="footer">
+            <a class="footer-button-down" href="google.com"><img src="../assets/down-arrow.png" alt="Hide/Show footer"
+                    style="width:100px;height:100px;transform: rotate(180deg)">
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
