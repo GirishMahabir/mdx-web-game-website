@@ -1,3 +1,39 @@
+header {
+    max-width: 100%;
+}
+
+header h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+tr {
+    border-radius: 100px;
+    width: 100%;
+    font-size: 35px !important;
+
+}
+
+th {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    font-size: 70px !important;
+    font-weight: bold !important;
+    padding: 10px;
+
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
 .tetris-nav-tetris-logo-position img {
     width: 300px;
     height: 10%;
@@ -106,7 +142,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
 }
 
 .context-body {
@@ -123,8 +159,38 @@
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.context-body-scoreboard {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 8%;
+}
+
+.context-body-game {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
     padding-top: 1%;
     padding-bottom: 3%;
+    width: 100%;
+}
+
+.context-body-game-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    padding-right: 5%;
+    width: 100%;
 }
 
 .welcome-text {
@@ -149,25 +215,28 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 8%;
-
+    width: 2%;
+    padding-left: 0%;
 }
 
-header h1 {
+.nav-bar-icon-02 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 70%;
-    font-family: Lato;
-    font-size: 60px;
-    font-weight: 600;
+    justify-content: space-evenly;
+    width: 2%;
+    padding-left: 9%;
+}
+
+.md-52 {
+    font-size: 40px !important;
 }
 
 .menu-icon-btn {
     text-decoration: none;
     color: black;
-    max-width: 3%;
+    max-width: fit-content;
 }
+
 
 .rm-url {
     text-decoration: none;
@@ -200,7 +269,7 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width:40%;
+    width: 40%;
     padding-left: 20%;
 }
 
@@ -265,4 +334,96 @@ header h1 {
     width: 80%;
     padding-left: 2%;
     padding-right: 0%;
+}
+
+.scoreboard-board {
+    display: table-header-group;
+    background-color: rgb(237, 237, 237);
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 30%;
+    border-radius: 50px;
+}
+
+.scoreboard-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    width: 100%;
+    border-radius: 25%;
+    margin: 0%;
+}
+
+/* .nav-bar-icon-game {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 80%;
+    margin-left: 40%;
+    padding-left: 30%;
+} */
+
+.game-btn-style {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 20px 40px;
+    font-size: 40px;
+    font-style: light;
+    font-family: Lato;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    margin-top: 70%;
+    margin-left: 40%;
+}
+
+.game-btn-style-01 {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-style: light;
+    font-family: Lato;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+    margin-right: 50%;
+}
+
+.game-btn-text-style {
+    margin-right: 50%;
+    margin-top: 15%;
+    max-width: fit-content;
+}
+
+.game-reset-start-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game-area {
+    background-color: rgb(239, 239, 239);
+    padding: 40px 20px;
+    height: 500px;
+    width: 800px;
+    display: inline-block;
+    margin: 10px 100px;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
 }
