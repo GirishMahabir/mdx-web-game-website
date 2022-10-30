@@ -41,43 +41,10 @@ td {
     object-position: center;
 }
 
-.nav-link {
-    text-decoration: none;
-    color: black;
-}
-
 .nav-home {
     color: rgba(0, 0, 0, 1);
     font-size: 38px;
     font-style: Light;
-    text-align: left;
-    font-family: Lato;
-    font-weight: 600;
-}
-
-.nav-score {
-    color: rgba(0, 0, 0, 1);
-    font-size: 38px;
-    font-style: Light;
-    text-align: left;
-    font-family: Lato;
-    font-weight: 600;
-}
-
-.nav-about {
-    color: rgba(0, 0, 0, 1);
-    height: auto;
-    font-size: 38px;
-    font-style: Light;
-    text-align: left;
-    font-family: Lato;
-    font-weight: 600;
-}
-
-.nav-login {
-    color: rgba(0, 0, 0, 1);
-    font-size: 38px;
-    font-style: normal;
     text-align: left;
     font-family: Lato;
     font-weight: 600;
