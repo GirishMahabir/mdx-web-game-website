@@ -325,8 +325,6 @@ td {
     margin-right: 10%;
 }
 
-
-
 .scoreboard-table {
     display: flex;
     flex-direction: column;
@@ -338,15 +336,6 @@ td {
     border-radius: 25%;
     margin: 0%;
 }
-
-/* .nav-bar-icon-game {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 80%;
-    margin-left: 40%;
-    padding-left: 30%;
-} */
 
 .game-btn-style {
     background-color: #ddd;

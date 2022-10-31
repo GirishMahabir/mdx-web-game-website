@@ -48,7 +48,7 @@ class CommonHeader
 
 
     # Function that creates the full navigation bar.
-    public function nav_bar($full_nav = false, $page_title = "Tetris", $index_page = False)
+    public function nav_bar($full_nav = false, $page_title = "Tetris")
     {
         # Adding Main Container, required to englobles the whole page.
         $this->add_container();
@@ -63,30 +63,29 @@ class CommonHeader
 
         # Checks if full nav bar need to be displayed, else only display the page
         # title and the navigation bar icon.
-        if ($index_page) {
-            if ($full_nav) {
-                # Adding the full navigation bar.
-                foreach ($this->nav_bar_elements as $element) {
-                    echo "
+        if ($full_nav) {
+            # Adding the full navigation bar.
+            foreach ($this->nav_bar_elements as $element) {
+                echo "
                         <div class='nav-home'>
-                            <a class='rm-url' href='{$element['link']}'>{$element['text']}</a>
+                            <a class='rm-url' href='php/{$element['link']}'>{$element['text']}</a>
                         </div>
                     ";
-                }
-            } else {
-                # Adding the page title and navigation bar expantion icon
-                echo "
+            }
+        } else {
+            # Adding the page title and navigation bar expantion icon
+            echo "
                     <h1>
                     $page_title
                     </h1>
                     <div class='nav-bar-icon-02'>
-                        <a class='menu-icon-btn' href='index.php'>
+                        <a class='menu-icon-btn' href='../index.php'>
                             <i class='material-icons md-52' color='black'>menu-hamburger</i>
                         </a>
                     </div>
                 ";
-            }
         }
+
 
 
         echo "
