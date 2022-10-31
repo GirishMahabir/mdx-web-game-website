@@ -66,11 +66,21 @@ class CommonHeader
         if ($full_nav) {
             # Adding the full navigation bar.
             foreach ($this->nav_bar_elements as $element) {
-                echo "
+                # First button use window.location to reload the page.
+                # Since this will reload the home page itself.
+                if ($element['text'] == 'HOME') {
+                    echo "
+                        <div class='nav-home'>
+                            <a class='rm-url' href='javascript:window.location.reload(true)'>{$element['text']}</a>
+                        </div>
+                    ";
+                } else {
+                    echo "
                         <div class='nav-home'>
                             <a class='rm-url' href='php/{$element['link']}'>{$element['text']}</a>
                         </div>
                     ";
+                }
             }
         } else {
             # Adding the page title and navigation bar expantion icon
