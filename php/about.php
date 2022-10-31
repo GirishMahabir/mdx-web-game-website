@@ -1,8 +1,8 @@
 <?php
 
-include 'head.php'; # Include the common php head file.
-include 'header.php'; # Include the common php header file.
-include 'footer.php'; # Include the common php footer file.
+include 'common/head.php'; # Include the common php head file.
+include 'common/header.php'; # Include the common php header file.
+include 'common/footer.php'; # Include the common php footer file.
 
 # Create a new instance of the CommonHead class.
 $head = new CommonHead();
@@ -59,3 +59,5 @@ echo "
 $footer = new CommonFooter();
 # Call the footer function.
 $footer->footer();
+
+?>
