@@ -9,7 +9,7 @@ $head = new CommonHead();
 # Call the html_declaration function.
 $head->html_declaration();
 # Call the html_head function.
-$head->html_head('Tetris - Home', true);
+$head->html_head('Tetris - Login', true);
 
 # Create a new instance of the CommonHeader class.
 $header = new CommonHeader();
@@ -53,5 +53,3 @@ echo "
 $footer = new CommonFooter();
 # Call the footer function.
 $footer->footer();
-
-?>

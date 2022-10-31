@@ -9,13 +9,13 @@ $head = new CommonHead();
 # Call the html_declaration function.
 $head->html_declaration();
 # Call the html_head function.
-$head->html_head('Tetris - Home', true);
+$head->html_head('Tetris - About', true);
 
 # Create a new instance of the CommonHeader class.
 $header = new CommonHeader();
 # Call the nav_bar function.
 # We want the full navigation bar, so we only need to pass on the 1st parameter.
-$header->nav_bar(false, "ABOUT");
+$header->nav_bar(false, "");
 
 # Body content goes here.
 echo "
@@ -59,5 +59,3 @@ echo "
 $footer = new CommonFooter();
 # Call the footer function.
 $footer->footer();
-
-?>
