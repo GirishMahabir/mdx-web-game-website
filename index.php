@@ -25,12 +25,12 @@ echo "
             <img src='../assets/tetris_logo.png' alt='tetris_tetris-logo'>
         </div>
 
-        <div class='welcome-text'>
-            <div class='main-page-body-content-01'>WELCOME TO THE TETRIS</div>
+        <div class='main-welcome-text'>
+            <div class='main-page-body-font'>WELCOME TO THE TETRIS</div>
             <br>
-            <div class='main-page-body-content-02'>WORLD</div>
+            <div class='main-page-body-font'>WORLD</div>
             <br> <br> <br>
-            <button class='main-page-play-button main-page-body-content-03'>
+            <button class='main-page-play-button'>
                 <a class='main-page-play-button rm-url' href='php/game.php'>PLAY</a>
             </button>
             <br>
@@ -42,5 +42,3 @@ echo "
 $footer = new CommonFooter();
 # Call the footer function.
 $footer->footer();
-
-?>

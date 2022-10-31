@@ -15,7 +15,7 @@ $head->html_head('Tetris - Register', true);
 $header = new CommonHeader();
 # Call the nav_bar function.
 # We want the full navigation bar, so we only need to pass on the 1st parameter.
-$header->nav_bar(false, '');
+$header->nav_bar(false, 'REGISTER');
 
 # Body content goes here.
 echo "
@@ -32,7 +32,7 @@ echo "
             <form>
                 <div>
                     <label class='form-font tab-40 ' for='user_id'>Username/Email</label>
-                    <label class='form-font tab-130' for='phone_number'>Phone Number</label><br>
+                    <label class='form-font tab-80' for='phone_number'>Phone Number</label><br>
                     <input class='form-input' type='text' id='user_id' name='user_id' placeholder='Username/Email'>
                     <input class='form-input' type='phone_number' id='phone_number' name='phone_number'
                         placeholder='Phone Number'>

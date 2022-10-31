@@ -1,4 +1,11 @@
+/* 
+    ############################################################
+    ################## HTML Elements Style #####################
+    ############################################################
+
+*/
 body {
+    /* HTML Body Style */
     background-image: url(../assets/layered-waves-haikei.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -6,10 +13,15 @@ body {
 }
 
 header {
+    /* Header Style */
     max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 header h1 {
+    /* Header H1 Style */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -20,6 +32,7 @@ header h1 {
 }
 
 tr {
+    /* Table Row Style */
     border-radius: 100px;
     width: 100%;
     font-size: 35px !important;
@@ -27,6 +40,7 @@ tr {
 }
 
 th {
+    /* Table Header Style */
     width: 100%;
     text-align: center;
     height: 100%;
@@ -37,18 +51,103 @@ th {
 }
 
 td {
+    /* Table Data Style */
     text-align: center;
     padding: 10px;
 }
 
-.tetris-nav-tetris-logo-position img {
+/* TAB Styles - Acts as blank spaces. */
+
+.tab-40 {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.tab-80 {
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.tab-130 {
+    display: inline-block;
+    margin-left: 140px;
+}
+
+.tab-180 {
+    display: inline-block;
+    margin-left: 180px;
+}
+
+.md-52 {
+    /* Increase font size of nav-bar hamburger icon. */
+    font-size: 40px !important;
+}
+
+.rm-url {
+    /* Remove URL default styles. */
+    text-decoration: none;
+    color: black;
+}
+
+.form-font {
+    /* Form font styling being used for the website. */
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.form-input {
+    /* Form input styling, login and register. */
+    color: gray;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-style: light;
+    font-family: Lato;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.text-box {
+    /* Text box styling being used for the website. */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 70%;
+    padding-left: 2%;
+    padding-right: 0%;
+}
+
+
+
+.nav-tetris-logo-position img {
+    /* Positioning of the logo on the nav-bar. */
     width: 300px;
     height: 10%;
     object-fit: cover;
     object-position: center;
 }
 
+.main-container {
+    /* Main container that would englobe the whole website on each page. */
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+}
+
+.nav-bar {
+    /* Nav-bar styling. */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
 .nav-home {
+    /* Nav-bar for the home page style. */
     color: rgba(0, 0, 0, 1);
     font-size: 38px;
     font-style: Light;
@@ -57,7 +156,8 @@ td {
     font-weight: 600;
 }
 
-.main-page-body-content-01 {
+.main-page-body-font {
+    /* Main page body font style. */
     color: rgba(0, 0, 0, 1);
     height: auto;
     position: relative;
@@ -69,19 +169,17 @@ td {
     font-weight: 600;
 }
 
-.main-page-body-content-02 {
-    color: rgba(0, 0, 0, 1);
-    height: auto;
-    position: relative;
-    font-size: 60px;
-    align-self: auto;
-    font-style: light;
-    text-align: center;
-    font-family: Lato;
-    font-weight: 600;
+.main-welcome-text {
+    /* Main welcome text positioning. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .main-page-play-button {
+    /* Main page play button styling. */
     background-color: #ddd;
     border: none;
     color: black;
@@ -98,28 +196,12 @@ td {
 }
 
 .footer-button-down {
+    /* Footer button facing down positioninig. */
     padding-right: 10%;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-}
-
 .context-body {
+    /* Context body for the main page styling. */
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -129,6 +211,7 @@ td {
 }
 
 .context-body-about {
+    /* Context body about page styling. */
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -138,43 +221,7 @@ td {
     padding-left: 5%;
 }
 
-.context-body-scoreboard {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 8%;
-}
 
-.context-body-game {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: flex-start;
-    padding-top: 1%;
-    padding-bottom: 3%;
-    width: 100%;
-}
-
-.context-body-game-col {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1%;
-    padding-bottom: 0%;
-    padding-right: 5%;
-    width: 100%;
-}
-
-.welcome-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
 
 .tetris-logo-main {
     width: 10%;
@@ -201,10 +248,7 @@ td {
     justify-content: space-evenly;
     width: 2%;
     padding-left: 9%;
-}
-
-.md-52 {
-    font-size: 40px !important;
+    padding-top: 2%;
 }
 
 .menu-icon-btn {
@@ -214,16 +258,13 @@ td {
 }
 
 
-.rm-url {
-    text-decoration: none;
-    color: black;
-}
 
-.form-font {
-    font-family: Lato;
-    font-size: 27px;
-    font-weight: 600;
-}
+/* 
+    ##############################################
+    ###### Login & Register PAGE STYLING  ########
+    ##############################################
+
+*/
 
 .register-button {
     background-color: #ddd;
@@ -269,47 +310,20 @@ td {
     justify-content: center;
 }
 
-.tab-40 {
-    display: inline-block;
-    margin-left: 40px;
-}
+/* 
+    ##############################################
+    ####### SCOREBOARD PAGE STYLING  ############
+    ##############################################
 
-.tab-80 {
-    display: inline-block;
-    margin-left: 80px;
-}
-
-.tab-130 {
-    display: inline-block;
-    margin-left: 140px;
-}
-
-.tab-180 {
-    display: inline-block;
-    margin-left: 180px;
-}
-
-.form-input {
-    color: gray;
-    padding: 10px 30px;
-    font-size: 20px;
-    font-style: light;
-    font-family: Lato;
-    font-weight: 600;
-    text-align: center;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 100px;
-}
-
-.text-box {
+*/
+.context-body-scoreboard {
+    /* Context body scoreboard page styling. */
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
-    justify-content: flex-start;
-    width: 70%;
-    padding-left: 2%;
-    padding-right: 0%;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 8%;
 }
 
 .scoreboard-board {
@@ -335,6 +349,37 @@ td {
     width: 100%;
     border-radius: 25%;
     margin: 0%;
+}
+
+
+/* 
+    ##############################################
+    ########## GAME PAGE STYLING  ###############
+    ##############################################
+
+*/
+
+.context-body-game {
+    /* Context body game page styling. */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    width: 100%;
+}
+
+.context-body-game-col {
+    /* Context body game page column styling. */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    padding-right: 5%;
+    width: 100%;
 }
 
 .game-btn-style {

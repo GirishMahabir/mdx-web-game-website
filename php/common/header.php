@@ -37,9 +37,9 @@ class CommonHeader
     {
         echo "
             <!-- Page Logo and Nav Bar  -->
-            <header class='header'>
+            <header>
                 <div class='tetris-logo'>
-                    <div class='tetris-nav-tetris-logo-position'>
+                    <div class='nav-tetris-logo-position'>
                         <img src='../assets/tetris_home_slow.gif' alt='tet'>
                     </div>
                 </div>
@@ -104,5 +104,3 @@ class CommonHeader
         ";
     }
 }
-
-?>
