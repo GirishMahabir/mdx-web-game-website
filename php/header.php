@@ -6,19 +6,19 @@ class CommonHeader
     # Declaring Full Navigation Bar.
     private $nav_bar_elements = array(
         'home' => array(
-            'link' => '../php/home.php',
+            'link' => 'index.php',
             'text' => 'HOME'
         ),
         'scoreboard' => array(
-            'link' => '../php/scoreboard.php',
+            'link' => 'scoreboard.php',
             'text' => 'SCOREBOARD'
         ),
         'about' => array(
-            'link' => '../php/about.php',
+            'link' => 'about.php',
             'text' => 'ABOUT'
         ),
         'login' => array(
-            'link' => '../php/login.php',
+            'link' => 'login.php',
             'text' => 'LOGIN'
         )
     );
@@ -48,7 +48,7 @@ class CommonHeader
 
 
     # Function that creates the full navigation bar.
-    public function nav_bar($full_nav = false, $page_title = "Tetris")
+    public function nav_bar($full_nav = false, $page_title = "Tetris", $index_page = False)
     {
         # Adding Main Container, required to englobles the whole page.
         $this->add_container();
@@ -63,28 +63,31 @@ class CommonHeader
 
         # Checks if full nav bar need to be displayed, else only display the page
         # title and the navigation bar icon.
-        if ($full_nav) {
-            # Adding the full navigation bar.
-            foreach ($this->nav_bar_elements as $element) {
+        if ($index_page) {
+            if ($full_nav) {
+                # Adding the full navigation bar.
+                foreach ($this->nav_bar_elements as $element) {
+                    echo "
+                        <div class='nav-home'>
+                            <a class='rm-url' href='{$element['link']}'>{$element['text']}</a>
+                        </div>
+                    ";
+                }
+            } else {
+                # Adding the page title and navigation bar expantion icon
                 echo "
-                    <div class='nav-home'>
-                        <a class='rm-url' href='{$element['link']}'>{$element['text']}</a>
+                    <h1>
+                    $page_title
+                    </h1>
+                    <div class='nav-bar-icon-02'>
+                        <a class='menu-icon-btn' href='index.php'>
+                            <i class='material-icons md-52' color='black'>menu-hamburger</i>
+                        </a>
                     </div>
                 ";
             }
-        } else {
-            # Adding the page title and navigation bar expantion icon
-            echo "
-                <h1>
-                $page_title
-                </h1>
-                <div class='nav-bar-icon-02'>
-                    <a class='menu-icon-btn' href='../index.html'>
-                        <i class='material-icons md-52' color='black'>menu-hamburger</i>
-                    </a>
-                </div>
-            ";
         }
+
 
         echo "
                 </div>
@@ -92,5 +95,3 @@ class CommonHeader
         ";
     }
 }
-
-?>

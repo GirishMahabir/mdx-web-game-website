@@ -15,14 +15,14 @@ $head->html_head('Tetris - Home', true);
 $header = new CommonHeader();
 # Call the nav_bar function.
 # We want the full navigation bar, so we only need to pass on the 1st parameter.
-$header->nav_bar(true);
+$header->nav_bar(true, "HOME", true);
 
 # Body content goes here.
 echo "
     <!-- Body of the page  -->
     <div class='context-body'>
         <div class='tetris-logo-main'>
-            <img src='assets/tetris_logo.png' alt='tetris_tetris-logo'>
+            <img src='../assets/tetris_logo.png' alt='tetris_tetris-logo'>
         </div>
 
         <div class='welcome-text'>
@@ -31,7 +31,7 @@ echo "
             <div class='main-page-body-content-02'>WORLD</div>
             <br> <br> <br>
             <button class='main-page-play-button main-page-body-content-03'>
-                <a class='main-page-play-button rm-url' href='html/game.html'>PLAY</a>
+                <a class='main-page-play-button rm-url' href='game.php'>PLAY</a>
             </button>
             <br>
         </div>
