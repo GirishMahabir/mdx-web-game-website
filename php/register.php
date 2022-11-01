@@ -33,16 +33,16 @@ echo "
                 <div>
                     <label class='form-font tab-40 ' for='user_id'>Username/Email</label>
                     <label class='form-font tab-80' for='phone_number'>Phone Number</label><br>
-                    <input class='form-input' type='text' id='user_id' name='user_id' placeholder='Username/Email'>
+                    <input class='form-input' type='text' id='user_id' name='user_id' placeholder='Username/Email' required>
                     <input class='form-input' type='phone_number' id='phone_number' name='phone_number'
-                        placeholder='Phone Number'>
+                        placeholder='Phone Number' required>
                 </div>
                 <br> <br> <br>
                 <div>
                     <label class='form-font tab-80' for='password'>Password</label>
                     <label class='form-font tab-180' for='address'>Address</label><br>
-                    <input class='form-input' type='password' id='password' name='password' placeholder='Password'>
-                    <input class='form-input' type='text' id='address' name='address' placeholder='Address'>
+                    <input class='form-input' type='password' id='password' name='password' placeholder='Password' required>
+                    <input class='form-input' type='text' id='address' name='address' placeholder='Address' required>
                 </div>
                 <br> <br>
                 <div class='register-btn'>

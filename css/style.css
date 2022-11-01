@@ -57,6 +57,13 @@ td {
     padding: 10px;
 }
 
+footer div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
 /* TAB Styles - Acts as blank spaces. */
 
 .tab-40 {
@@ -136,6 +143,7 @@ td {
     display: flex;
     flex-direction: column;
     padding-left: 3%;
+    
 }
 
 .nav-bar {
@@ -154,6 +162,10 @@ td {
     text-align: left;
     font-family: Lato;
     font-weight: 600;
+}
+
+.nav-home:hover {
+    color: red;
 }
 
 .main-page-body-font {
@@ -225,13 +237,6 @@ td {
 
 .tetris-logo-main {
     width: 10%;
-}
-
-.footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
 }
 
 .nav-bar-icon {
@@ -439,4 +444,44 @@ td {
     cursor: pointer;
     border: none;
     border-radius: 100px;
+}
+
+/*
+    ##############################################
+    ########## Button Animatons   ################
+    ##############################################
+
+*/
+
+.nav-home a:hover {
+    /* Home full nav hover animation. */
+    transition: 0.5s;
+    color: rgb(129, 53, 79);
+    text-shadow: 0 0 10px rgb(198, 49, 99), 0 0 20px rgb(198, 49, 99), 0 0 40px rgb(198, 49, 99), 0 0 80px;
+}
+
+.main-welcome-text div:hover {
+    /* Main welcome text hover effect. */
+    transition: 0.5s;
+    color: rgb(195, 101, 38);
+    text-shadow: 0 0 10px rgb(195, 101, 38), 0 0 20px rgb(195, 101, 38), 0 0 40px rgb(195, 101, 38), 0 0 80px;
+}
+
+.main-page-play-button a:hover {
+    /* Main page play button hover effect. */
+    transition: 0.5s;
+    color: rgb(210, 34, 34);
+    text-shadow: 0 0 10px rgb(210, 34, 34), 0 0 20px rgb(210, 34, 34), 0 0 40px rgb(210, 34, 34), 0 0 80px;
+}
+
+h1:hover {
+    transition: 0.5s;
+    color: rgb(195, 101, 38);
+    text-shadow: 0 0 10px rgb(195, 101, 38), 0 0 20px rgb(195, 101, 38), 0 0 40px rgb(195, 101, 38), 0 0 80px;
+}
+
+.nav-bar-icon-02 a:hover {
+    transition: 0.5s;
+    color: rgb(195, 101, 38);
+    text-shadow: 0 0 10px rgb(195, 101, 38), 0 0 20px rgb(195, 101, 38), 0 0 40px rgb(195, 101, 38), 0 0 80px;
 }

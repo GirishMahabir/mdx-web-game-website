@@ -10,7 +10,7 @@ class CommonFooter
             echo "
                 <!-- Footer of the page  -->
                 <footer>
-                    <div class='footer'>
+                    <div>
                         <a class='footer-button-down' href='google.com'><img src='assets/down-arrow.png' alt='Hide/Show footer'
                                 style='width:100px;height:100px;transform: rotate(180deg)'>
                         </a>
