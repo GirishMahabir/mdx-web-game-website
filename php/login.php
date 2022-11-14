@@ -30,10 +30,15 @@ echo "
             <!-- 4 Text fields, 2 column, pill buttons -->
             <form>
                 <div>
-                    <label class='form-font tab-40 ' for='user_id'>Username/Email</label>
+                    <label class='form-font tab-82 ' for='email'>Email Address</label>
                     <label class='form-font tab-130' for='password'>Password</label><br>
-                    <input class='form-input' type='text' id='user_id' name='user_id' placeholder='Username/Email' required>
+                    <input class='form-input' type='text' id='email' name='email' placeholder='Email Address' minlength='8' required>
+                    
+
+
                     <input class='form-input' type='password' id='password' name='password' placeholder='Password'required>
+
+
                 </div>
                 <br>
                 <div class='login-btn'>

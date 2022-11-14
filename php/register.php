@@ -29,26 +29,40 @@ echo "
 
         <div class='login-form'>
             <!-- 4 Text fields, 2 column, pill buttons -->
-            <form>
+            <form >
                 <div>
-                    <label class='form-font tab-40 ' for='user_id'>Username/Email</label>
-                    <label class='form-font tab-80' for='phone_number'>Phone Number</label><br>
-                    <input class='form-input' type='text' id='user_id' name='user_id' placeholder='Username/Email' required>
-                    <input class='form-input' type='phone_number' id='phone_number' name='phone_number'
-                        placeholder='Phone Number' required>
-                </div>
-                <br> <br> <br>
-                <div>
-                    <label class='form-font tab-80' for='password'>Password</label>
-                    <label class='form-font tab-180' for='address'>Address</label><br>
+                    
+                    <label class='form-font right-tab' for='email'>EMAIL ADDRESS: </label>
+                    <input class='form-input' type='email' id='email' name='email' placeholder='Email Address' required>
+                    <ul class='input-requirements form-font-requirements'>
+                        <li>Must be a valid email address.</li>
+                    </ul>
+
+                    <label class='form-font right-tab' for='phone_number'>PHONE NUMBER: </label>
+                    <input class='form-input' type='phone_number' id='phone_number' name='phone_number' placeholder='Phone Number' required>
+
+                    <ul class='input-requirements form-font-requirements'>
+                        <li>Must be a valid phone number.</li>
+                    </ul>
+
+                    <label class='form-font' for='password'>PASSWORD: </label> <br>
                     <input class='form-input' type='password' id='password' name='password' placeholder='Password' required>
-                    <input class='form-input' type='text' id='address' name='address' placeholder='Address' required>
+                    <ul class='input-requirements form-font-requirements'>
+                        <li class='password-requirements-item'>Must be at least 8 characters long</li>
+                        <li class='password-requirements-item'>Must contain at least 1 uppercase letter</li>
+                        <li class='password-requirements-item'>Must contain at least 1 lowercase letter</li>
+                        <li class='password-requirements-item'>Must contain at least 1 number</li>
+                        <li class='password-requirements-item'>Must contain at least 1 special character</li>
+                    </ul>
+
+                    <label class='form-font right-tab' for='address'>ADDRESS: </label> <br>
+                    <input class='form-input tab-130' type='text' id='address' name='address' placeholder='Address' required>
+            
                 </div>
                 <br> <br>
                 <div class='register-btn'>
                     <button class='form-font register-button' type='submit' class='btn'>Register</button>
                 </div>
-
             </form>
         </div>
     </div>

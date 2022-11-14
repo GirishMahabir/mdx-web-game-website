@@ -69,11 +69,12 @@ footer div {
 .tab-40 {
     display: inline-block;
     margin-left: 40px;
+    padding-left: 40px;
 }
 
-.tab-80 {
+.tab-82 {
     display: inline-block;
-    margin-left: 80px;
+    margin-left: 82px;
 }
 
 .tab-130 {
@@ -81,9 +82,9 @@ footer div {
     margin-left: 140px;
 }
 
-.tab-180 {
+.tab-200 {
     display: inline-block;
-    margin-left: 180px;
+    margin-left: 200px;
 }
 
 .md-52 {
@@ -104,6 +105,13 @@ footer div {
     font-weight: 600;
 }
 
+.form-font-requirements {
+    /* Form font styling being used for the website. */
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .form-input {
     /* Form input styling, login and register. */
     color: gray;
@@ -117,6 +125,7 @@ footer div {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 100px;
+    border: 1px solid #ccc;
 }
 
 .text-box {
@@ -143,7 +152,7 @@ footer div {
     display: flex;
     flex-direction: column;
     padding-left: 3%;
-    
+
 }
 
 .nav-bar {
@@ -292,7 +301,7 @@ footer div {
     flex-direction: row;
     justify-content: flex-start;
     width: 40%;
-    padding-left: 20%;
+    padding-left: 30%;
 }
 
 .login-btn {
@@ -305,7 +314,8 @@ footer div {
 .register-btn {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 10%;
     padding-top: 3%;
 }
 
@@ -313,6 +323,14 @@ footer div {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.right-tab {
+    /* display: flex; */
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 10%;
 }
 
 /* 
@@ -484,4 +502,26 @@ h1:hover {
     transition: 0.5s;
     color: rgb(195, 101, 38);
     text-shadow: 0 0 10px rgb(195, 101, 38), 0 0 20px rgb(195, 101, 38), 0 0 40px rgb(195, 101, 38), 0 0 80px;
+}
+
+
+input:not([type="submit"]):valid {
+    border-color: rgb(0, 255, 0);
+}
+
+input:not([type="submit"]):invalid {
+    border-color: red;
+}
+
+input:not([type="submit"])+.input-requirements {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+input:not([type="submit"]):focus+.input-requirements,
+input:not([type="submit"]):hover+.input-requirements,
+input:not([type="submit"]):active+.input-requirements {
+    max-height: 1000px;
+    transition: max-height 1s ease-in;
 }

@@ -46,7 +46,6 @@ class CommonHeader
         ";
     }
 
-
     # Function that creates the full navigation bar.
     public function nav_bar($full_nav = false, $page_title = "Tetris")
     {
