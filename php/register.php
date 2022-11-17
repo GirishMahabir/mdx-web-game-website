@@ -33,13 +33,14 @@ echo "
                 <div>
                     
                     <label class='form-font right-tab' for='email'>EMAIL ADDRESS: </label>
-                    <input class='form-input' type='email' id='email' name='email' placeholder='Email Address' required>
+                    <input class='form-input' type='email_address' id='email' name='email' placeholder='Email Address'>
+
                     <ul class='input-requirements form-font-requirements'>
                         <li>Must be a valid email address.</li>
                     </ul>
 
                     <label class='form-font right-tab' for='phone_number'>PHONE NUMBER: </label>
-                    <input class='form-input' type='phone_number' id='phone_number' name='phone_number' placeholder='Phone Number' required>
+                    <input class='form-input' type='phone_number' id='phone' name='phone_number' placeholder='Phone Number' required>
 
                     <ul class='input-requirements form-font-requirements'>
                         <li>Must be a valid phone number.</li>
@@ -66,6 +67,10 @@ echo "
             </form>
         </div>
     </div>
+    
+<!-- JS Scripts -->
+<script src='../../js/form_validation.js'></script>
+
 ";
 
 # Create a new instance of the CommonFooter class.

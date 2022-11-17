@@ -33,12 +33,7 @@ echo "
                     <label class='form-font tab-82 ' for='email'>Email Address</label>
                     <label class='form-font tab-130' for='password'>Password</label><br>
                     <input class='form-input' type='text' id='email' name='email' placeholder='Email Address' minlength='8' required>
-                    
-
-
                     <input class='form-input' type='password' id='password' name='password' placeholder='Password'required>
-
-
                 </div>
                 <br>
                 <div class='login-btn'>
@@ -52,6 +47,8 @@ echo "
             </form>
         </div>
     </div>
+<!-- JS Scripts -->
+<script src='../../js/form_validation.js'></script>
 ";
 
 # Create a new instance of the CommonFooter class.
