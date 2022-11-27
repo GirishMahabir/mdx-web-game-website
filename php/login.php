@@ -37,7 +37,7 @@ echo "
                 </div>
                 <br>
                 <div class='login-btn'>
-                    <button class='form-font register-button' type='submit' class='btn'>Login</button>
+                    <button class='form-font register-button' id='loginButton' type='button' class='btn'>Login</button>
                 </div>
                 <br>
                 <div class='register-text'>
