@@ -35,10 +35,15 @@ Scoreboard.prototype.updateScoreboard = function () {
 
     // Update the scoreboard with the top 5 scores.
     for (let i = 1; i <= 5; i++) {
+        // If there are less than 5 scores, display the scores that are available.
+        // i - 1 because the array is 0 indexed and the scoreboard is 1 indexed.
         if (playerScores[i - 1]) {
+            // Display the username and score.
             this['playerLevel' + i + 'Name'].innerHTML = playerScores[i - 1].username;
             this['playerLevel' + i + 'Score'].innerHTML = playerScores[i - 1].score;
-        } else {
+        }
+        // If there are no scores, display 'Blank'.
+        else {
             this['playerLevel' + i + 'Name'].innerHTML = '';
             this['playerLevel' + i + 'Score'].innerHTML = '';
         }
