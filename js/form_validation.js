@@ -75,6 +75,7 @@ function registerButton(elements) {
                 username: username,
                 password: password,
                 phone_number: phone,
+                // score: Math.floor(Math.random() * 100),
                 score: 0,
                 logged_in: false
             };
@@ -182,7 +183,6 @@ function setAllUsersLoggedOut() {
         console.log('Sorry, your browser does not support Web Storage...');
     }
 }
-
 
 function main() {
     // Array of all the elements that need to be checked + regex for each

@@ -37,36 +37,36 @@ echo "
                 </tr>
                 <tr>
                     <td><i class='material-icons md-36'>play_arrow</i></td>
-                    <td class='form-font'>Player 1</td>
-                    <td class='form-font'>100</td>
+                    <td class='form-font' id='player_level_1_name'>Player 1</td>
+                    <td class='form-font' id='player_level_1_score'>0</td>
                 </tr>
                 <tr>
                     <td><i class='material-icons md-36'>play_arrow</i></td>
-                    <td class='form-font'>Player 2</td>
-                    <td class='form-font'>200</td>
+                    <td class='form-font' id='player_level_2_name'>Player 2</td>
+                    <td class='form-font' id='player_level_2_score'>0</td>
                 </tr>
                 <tr>
                     <td><i class='material-icons md-36'>play_arrow</i></td>
-                    <td class='form-font'>Player 3</td>
-                    <td class='form-font'>300</td>
+                    <td class='form-font' id='player_level_3_name'>Player 3</td>
+                    <td class='form-font' id='player_level_3_score'>0</td>
                 </tr>
                 <tr>
                     <td><i class='material-icons md-36'>play_arrow</i></td>
-                    <td class='form-font'>Player 4</td>
-                    <td class='form-font'>400</td>
+                    <td class='form-font' id='player_level_4_name'>Player 4</td>
+                    <td class='form-font' id='player_level_4_score'>0</td>
                 </tr>
                 <tr>
                     <td><i class='material-icons md-36'>play_arrow</i></td>
-                    <td class='form-font'>Player 5</td>
-                    <td class='form-font'>500</td>
+                    <td class='form-font' id='player_level_5_name'>Player 5</td>
+                    <td class='form-font' id='player_level_5_score'>0</td>
                 </tr>
             </table>
         </div>
     </div>
+<!-- JS Scripts -->
+<script src='../../js/scoreboard.js'></script>
 ";
 # Create a new instance of the CommonFooter class.
 $footer = new CommonFooter();
 # Call the footer function.
 $footer->footer();
-
-?>

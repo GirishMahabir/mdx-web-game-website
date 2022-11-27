@@ -1,7 +1,7 @@
 # TODO:
-- [ ] Add HTML Local Storage.
-    - [ ] Proper Structure.
-    - [ ] Test with multiple users.
+- [x] Add HTML Local Storage.
+    - [x] Proper Structure.
+    - [x] Test with multiple users.
 
 - [ ] Sort and users add to Leaderboard.
 
