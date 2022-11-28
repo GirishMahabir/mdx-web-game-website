@@ -77,6 +77,8 @@ function registerButton(elements) {
                 phone_number: phone,
                 // score: Math.floor(Math.random() * 100),
                 score: 0,
+                level: 1,
+                lines: 0,
                 logged_in: false
             };
 
@@ -215,5 +217,4 @@ function main() {
     }
 }
 
-main();
-
+main(); 
