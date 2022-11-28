@@ -129,6 +129,7 @@ function loginButton(elements) {
         for (let key in elements) {
             if (elements[key].validated === false) {
                 validated = false;
+                alert('Please fill in all the fields correctly');
             }
         }
 
