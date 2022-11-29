@@ -168,7 +168,6 @@ function loginButton(elements) {
 
 // On the 1st load of the page, set all user_logged_in properties to false
 function setAllUsersLoggedOut() {
-    console.log('Setting all users logged out');
     // Check if local storage is supported
     if (typeof (Storage) !== 'undefined') {
         // Get all the keys in local storage

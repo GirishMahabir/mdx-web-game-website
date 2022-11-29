@@ -106,7 +106,7 @@ class Model {
 
             // if the shape is at the top of the grid, game over!
             if (this.fallingShape.y === 0) {
-                console.log("Game Over!, Refresh to play again.")
+                alert("Game Over!, Click OK to restart.")
                 this.grid = this.initialGrid()
             }
             this.fallingShape = null
