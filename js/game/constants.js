@@ -1,5 +1,4 @@
-// Defining the speed at which the shapes will be going down.
-const DROP_SPEED = 1000
+
 // Defining the Block/Shape Width.
 const TETRIS_SHAPES_WIDTH = 50
 // Defining the ROWS and COLUMNS for the game.

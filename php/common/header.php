@@ -89,7 +89,7 @@ class CommonHeader
                     </h1>
                     <div class='nav-bar-icon-02'>
                         <a class='menu-icon-btn' href='../index.php'>
-                            <i class='material-icons md-52' color='black'>menu-hamburger</i>
+                            <i class='material-icons md-52' color='black'>home</i>
                         </a>
                     </div>
                 ";

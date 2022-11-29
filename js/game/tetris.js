@@ -5,7 +5,8 @@ let lines_value = document.getElementById("lines") // get the lines_value elemen
 let context = canvas.getContext("2d") // get the context of the canvas
 context.scale(TETRIS_SHAPES_WIDTH, TETRIS_SHAPES_WIDTH) // scale the canvas
 let model = new Model(context) // create a new model
-
+// Defining the speed at which the shapes will be going down.
+let drop_speed = 1000
 let score = 0 // the score of the player
 let level = 1;
 let lines = 0; // initialize the line break counter.
@@ -34,7 +35,7 @@ if (localStorage.length === 0) {
 let startGame = () => {
     setInterval(() => {
         newGameplay() // call the new game state function
-    }, DROP_SPEED);
+    }, drop_speed);
 }
 
 
@@ -142,26 +143,31 @@ document.addEventListener("keydown", (e) => {
 setInterval(() => {
     if (score >= 100) {
         level = 2;
+        drop_speed += 100;
         level_value.innerHTML = level;
         updateLocalStorage("level")
     }
     if (score >= 200) {
         level = 3;
+        drop_speed += 200;
         level_value.innerHTML = level;
         updateLocalStorage("level")
     }
     if (score >= 300) {
         level = 4;
+        drop_speed += 300;
         level_value.innerHTML = level;
         updateLocalStorage("level")
     }
     if (score >= 400) {
         level = 5;
+        drop_speed += 400;
         level_value.innerHTML = level;
         updateLocalStorage("level")
     }
     if (score >= 500) {
         level = 6;
+        drop_speed += 1000;
         level_value.innerHTML = level;
         updateLocalStorage("level")
     }
