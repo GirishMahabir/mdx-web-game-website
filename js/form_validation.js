@@ -84,10 +84,10 @@ function registerButton(elements) {
 
             // Check if local storage is supported
             if (typeof (Storage) !== 'undefined') {
-                // Check if username key already exists.
-                if (localStorage.getItem(username)) {
+                // Check if email key already exists.
+                if (email in localStorage) {
                     // If it does, alert the user and redirect to login page.
-                    alert('Username already exists. Please login.');
+                    alert('Email already exists. Please login.');
                     window.location.href = 'login.php';
                 } else {
                     // Save the user details in local storage
